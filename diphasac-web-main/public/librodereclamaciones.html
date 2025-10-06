@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVHT0NS30F"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      let currentURL = window.location.href;
+      if (!currentURL.includes("localhost") && !currentURL.includes("127.0.0.1")) {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-LVHT0NS30F');
+      }
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diphasac</title>
+    <meta name="description" content="Generando bienestar">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div
+    class="position-absolute d-flex pe-3 pe-md-4 pe-xl-0 ps-4 ps-md-5 align-items-center justify-content-between w-100 py-3 z-3">
+    <a href="index.html">
+        <img src="images/Diphasac-logo.svg" alt="" class="diphasac-navbar-logo">
+    </a>
+    <div class="d-none d-lg-flex">
+        <a href="nosotros.html" class="navbar-link d-block px-3">
+            Nosotros
+        </a>
+        <div class="bg-white" style="width: 2px"></div>
+        <a href="productos.html" class="navbar-link d-block px-3">
+            Productos
+        </a>
+        <div class="bg-white" style="width: 2px"></div>
+        <a href="compromiso.html" class="navbar-link d-block px-3">
+            Compromiso
+        </a>
+        <div class="bg-white d-none d-lg-block d-xl-none" style="width: 2px"></div>
+        <a href="diphapuntos.html" class="navbar-link d-none d-lg-block d-xl-none px-3">
+            Diphapuntos
+        </a>
+        <div class="bg-white" style="width: 2px"></div>
+        <a href="contacto.html" class="navbar-link d-block px-3 active">
+            Contacto
+        </a>
+    </div>
+    <a href="diphapuntos.html"
+       class="d-none d-xl-block text-center navbar-puntos fw-medium text-uppercase px-5 py-2">
+        Club de puntos<br>
+        <span class="fw-black fs-4" style="line-height: 20px;">Diphasac</span>
+    </a>
+    <div class="d-block d-lg-none">
+        <a href="#" class="navbar-expand-link" data-bs-toggle="modal" data-bs-target="#navModal">
+            <img src="icons/bars.svg" alt="Menu" height="30" class="bars"/>
+        </a>
+    </div>
+</div>
+
+<!-- Cookies Settings -->
+<div id="cookie-alert" class="cookie-alert">
+    <div class="cookie-alert_text">
+      <h2>Preferencias de Cookies</h2>
+      <p>
+        Usamos cookies para mejorar la experiencia del usuario en nuestro
+        sitio web.
+      </p>
+    </div>
+    <div class="text-center">
+        <button id="accept-cookies" class="btn btn-primary btn-lg rounded-pill px-5"> Aceptar
+    </button> 
+        <button id="close-cookies" class="btn btn-danger btn-lg rounded-pill px-5">Rechazar</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-nav">
+        <div class="modal-content modal-content-nav p-5 navbar-gradient-bg d-flex flex-column h-100">
+
+            <a href="#" class="d-inline-block" data-bs-dismiss="modal" aria-label="Close"
+               style="position:absolute; right: 3rem;">
+                <img src="icons/x-solid.svg" alt="Menu" height="30" class="close-icon">
+            </a>
+
+            <div>
+                <!-- Home -->
+                <div class="mb-3">
+                    <a href="index.html" class="navbar-link text-uppercase fw-bold">
+                        Inicio
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="nosotros.html" class="navbar-link text-uppercase">
+                        Nosotros
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="productos.html" class="navbar-link text-uppercase">
+                        Productos
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="compromiso-social.html" class="navbar-link text-uppercase">
+                        Compromiso Social
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="farmacovigilancia.html" class="navbar-link text-uppercase">
+                        Farmacovigilancia
+                    </a>
+                </div>
+
+                <div class="mb-5">
+                    <a href="contacto.html" class="navbar-link text-uppercase">
+                        Contacto
+                    </a>
+                </div>
+
+                <div>
+                    <a href=""
+                       class="d-block text-center navbar-puntos  rounded-pill fw-medium text-uppercase px-5 py-2">
+                        Club de puntos<br>
+                        <span class="fw-black fs-4" style="line-height: 20px;">Diphasac</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="flex-grow-1 flex-fill">
+                <a href="diphapuntos.html"
+                   class="d-block text-center navbar-puntos  rounded-pill fw-medium text-uppercase px-5 py-2">
+                    Club de puntos<br>
+                    <span class="fw-black fs-4" style="line-height: 20px;">Diphasac</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section id="contact" class="px-4 px-md-5 pb-5" style="padding-top: 130px">
+    <div class="container-fluid px-0 mx-auto" style="max-width: 1000px;">
+        <div class="rounded-5 p-4" style="background-color: #92CCF0">
+            <h2 class="fw-extrabold" style="color: #0F5F9C;">
+                DIPHASAC S.A.C
+                <h3 class="fw-extrabold fs-5 mb-1" style="color: #12609D;">
+                    RUC 20546207219
+                </h3>
+            </h2>
+            <div class="d-flex align-items-center my-4">
+                <p class="fs-5 mb-0 text-dark">
+                    Av. Alfredo Benavides 768, interior 604, Miraflores, Lima - Perú
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="g-5 mt-4 mx-auto" style="max-width: 1000px;">
+        <div class="mt-4">
+            <form class="consulta-box" id="contactForm" enctype="multipart/form-data" required>
+                <div class="container-fluid px-0">
+                    <h2 class="fw-semibold" style="max-width: 400px; color: #92CCF0;">
+                        <span>Hoja de reclamación</span>
+                    </h2>
+                    <h2><span class="text-uppercase fw-extrabold text-white fs-1">Identificación del consumidor</span></h2>
+                    <div class="row g-4">
+                        <!-- Tipo de persona -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="clientType" name="client_type" style="background-color: #c1e0ee; border-radius: 40px !important;" required>
+                                    <option value="" disabled selected>Seleccione el tipo de persona</option>
+                                    <option value="natural">Natural</option>
+                                    <option value="juridico">Jurídica</option>
+                                </select>
+                                <label for="clientType">Tipo de persona:</label>
+                            </div>
+                        </div>
+                        <!-- Nombres completos -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="clientFullName" name="client_full_name" placeholder="Nombre y Apellido" required>
+                                <label for="clientFullName">Nombres y Apellidos:</label>
+                            </div>
+                        </div>
+                        <!-- Tipo de documento -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="clientDocumentType" name="client_document_type" style="background-color: #c1e0ee; border-radius: 40px !important;" required>
+                                    <option value="" disabled selected>Seleccione el documento</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DNI">DNI</option>
+                                    <option value="carnetmilitar">Carnet Militar</option>
+                                    <option value="Pasaporte">Pasaporte</option>
+                                </select>
+                                <label for="clientDocumentType">Tipo de documento:</label>
+                            </div>
+                        </div>
+                        <!-- Número de documento -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating py-0">
+                                <input type="text" class="form-control" id="clientDocumentNumber" name="client_document_number" placeholder="DNI" required>
+                                <label for="clientDocumentNumber">Número de documento:</label>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="clientEmail" name="client_email" placeholder="Correo electrónico" required>
+                                <label for="clientEmail">Email:</label>
+                            </div>
+                        </div>
+                        <!-- Dirección -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="clientAddress" name="client_address" placeholder="Dirección" required>
+                                <label for="clientAddress">Dirección:</label>
+                            </div>
+                        </div>
+                        <!-- Departamento -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="clientDepartment" name="client_department" placeholder="Departamento" required>
+                                <label for="clientDepartment">Departamento:</label>
+                            </div>
+                        </div>
+                        <!-- Provincia -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="clientProvince" name="client_province" placeholder="Provincia" required>
+                                <label for="clientProvince">Provincia:</label>
+                            </div>
+                        </div>
+                        <!-- Distrito -->
+                         <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="clientDistrict" name="client_district" placeholder="Distrito" required>
+                                <label for="clientDistrict">Distrito:</label>
+                            </div>
+                        </div>
+                        <!-- Número de celular -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="clientPhoneNumber" name="client_phone_number" placeholder="Celular" required>
+                                <label for="clientPhoneNumber">Número de Celular:</label>
+                            </div>
+                        </div>
+                        <!-- Fecha del reclamo -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="date" class="form-control" id="complaintDate" name="complaint_date" required>
+                                <label for="complaintDate">Fecha del Reclamo/Queja:</label>
+                            </div>
+                        </div>
+
+                        <h2><span class="text-uppercase fw-extrabold text-white fs-1">Detalle del reclamo</span></h2>
+        
+                        <!-- Fecha de la incidencia -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="date" class="form-control" id="incidentDate" name="incident_date" required>
+                                <label for="incidentDate">Fecha de la incidencia:</label>
+                            </div>
+                        </div>
+                        <!-- Nombre o serie del producto -->
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="productName" name="product_name" placeholder="Nombre o serie del producto" required>
+                                <label for="productName">Indique el nombre o serie del producto:</label>
+                            </div>
+                        </div>
+                        <!-- Detalle del reclamo -->
+                        <div class="col-12 mt-3">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Escribe aquí el detalle de tu reclamo..." id="complaint" name="complaint" style="height: 100px" required></textarea>
+                                <label for="complaint">Detalle del Reclamo/Queja:</label>
+                            </div>
+                        </div>
+                        <!-- Observaciones -->
+                        <div class="col-12 mt-3">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Solo para personal de Diphasac..." id="observation" name="observation" style="height: 100px"></textarea>
+                                <label for="observation">Observaciones (solo para personal de Diphasac):</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox1" required>
+                                <label class="form-check-label text-white fs-5" for="checkbox1">
+                                    Manifiesto mi conformidad con la Información completada y del contenido de la reclamación
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox2" required>
+                                <label class="form-check-label text-white fs-5" for="checkbox2">
+                                    He leído y autorizo el tratamiento de mis datos personales de acuerdo a la
+                                    <a class="fw-semibold text-white" target="_blank"
+                                       href="Politica-de-Tratamiento-de-Datos-Personales.pdf">
+                                        “Política de Tratamiento de Datos Personales”
+                                    </a>
+                                    <div style="height: 20px;"></div>
+<p class="text-uppercase fw-extrabold text-white" style="font-size: 16px;">
+    El envío de la respuesta será realizado de forma electrónica, salvo que solicite específicamente la notificación física y lo detalle en su reclamo.
+</p>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Botón de enviar -->
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5" id="quejaBtn" disabled>
+                                Enviar reclamo y/o queja
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer id="footer" class="py-4 py-md-5 px-4 px-md-5 text-white">
+    <div class="mx-auto" style="max-width: 1400px;">
+        <div class="container-fluid px-0">
+            <div class="row g-5">
+
+                <!-- Diphasac info -->
+                <div class="col-9 col-sm-12 col-md-4 order-1 order-md-0">
+                    <div class="mb-4">
+                        <img src="images/Diphasac-blanco.webp" alt="" class="w-50">
+                    </div>
+                    <p>
+                        Ubicación: Av. Alfredo Benavides 768,
+                        interior 604, Miraflores, Lima - Perú
+                    </p>
+                    <p>
+                        Contacto: 932 329 579
+                    </p>
+                    <p>
+                        Correo: contacto@diphasac.com
+                    </p>
+                    <div class="d-flex mt-3">
+                        <a href="https://www.facebook.com/diphasac" target="_blank"
+                           class="media-icon-link position-relative">
+                            <img src="images/facebook-f.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                        <a href="https://www.instagram.com/diphasac.pe/" target="_blank"
+                           class="media-icon-link position-relative ms-3">
+                            <img src="images/instagram.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                        <a href="https://www.tiktok.com/@diphasac" target="_blank"
+                           class="media-icon-link position-relative ms-3">
+                            <img src="images/tiktok.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                        <a href="https://www.linkedin.com/company/diphasac/" target="_blank"
+                           class="media-icon-link position-relative ms-3">
+                            <img src="images/linkedin.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer links -->
+                <div class="col-12 col-md-8 order-0 order-md-1">
+                    <div class="row">
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <h2 class="fs-5 fw-bold mb-4">Términos</h2>
+
+                            <div>
+                                <a href="nosotros.html" class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Acerca de nosotros
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="" class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Términos y condiciones
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="Codigo-de-Etica-DIPHASAC.pdf" target="_blank" class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Código de Ética
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="Politica-de-Cumplimiento-DIPHASAC.pdf" target="_blank"
+                                   class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Política de cumplimiento
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="Politica-de-Tratamiento-de-Datos-Personales.pdf" target="_blank"
+                                   class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Política de Tratamiento de Datos
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                        <div class="mt-4">
+                            <a href="librodereclamaciones.html" target="_blank"
+                               class="footer-link">
+                                <div class="me-2">
+                                    <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                </div>
+                                <div class="d-inline">
+                                    Libro de Reclamaciones
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-sm-7 col-md-7">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-6 mt-5 mt-sm-0">
+                                    <h2 class="fs-5 fw-bold mb-4">Productos</h2>
+
+                                    <div>
+                                        <a href="linea-otc.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Línea OTC
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="linea-rx.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Línea RX
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="linea-gx.html" target="_blank" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Línea GX
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="personal-care.html" target="_blank" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Personal Care
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-6 mt-5 mt-sm-0">
+                                    <h2 class="fs-5 fw-bold mb-4">Bienestar</h2>
+
+                                    <div>
+                                        <a href="farmacovigilancia.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Farmacovigilancia
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="compromiso-social.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Compromiso Social
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-5">
+            <p>RUC: 20546207219</p>
+            <p>Diphasac S.A.C.</p>
+        </div>
+        <div style="height: 2px; background-color: #92CCF0"></div>
+        <p class="mt-4 mb-0 text-center fw-semibold">
+            Copyright ©
+            <a class="text-white" href="">DIPHASAC SAC.</a>
+            2024 – Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+
+<!-- Whatsapp button -->
+<a href="https://api.whatsapp.com/send?phone=51960589241&text=Quiero%20ponerme%20en%20contacto%20con%20Diphasac."
+   target="_blank" class="whatsapp-float ">
+    <img src="images/whatsapp-icon.svg" alt="whatsapp" class="w-100">
+</a>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+        // Obtener elementos
+        const checkbox1 = document.getElementById('checkbox1');
+    const checkbox2 = document.getElementById('checkbox2');
+    const submitButton = document.getElementById('quejaBtn');
+
+    
+    function checkCheckboxes() {
+        if (checkbox1.checked && checkbox2.checked) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    }
+
+    checkbox1.addEventListener('change', checkCheckboxes);
+    checkbox2.addEventListener('change', checkCheckboxes);
+
+    // Obtener el formulario y agregar un event listener para el submit
+    const form = document.getElementById('contactForm');
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que se recargue la página
+
+        // Crear un objeto FormData a partir del formulario
+        const formData = new FormData(form);
+
+        // Realizar la solicitud fetch con FormData (sin convertir a JSON)
+        fetch('https://reclamapp.com/libro-de-reclamaciones-diphasac', {
+            method: 'POST',
+            body: formData // Usamos FormData en lugar de JSON
+        })
+        .then(response => {
+            // Primero verificamos si la respuesta es exitosa (status 200-299)
+            if (response.ok) {
+                return response.json(); // Procesar la respuesta como JSON
+            } else {
+                throw new Error('Hubo un error en el envío de datos');
+            }
+        })
+        .then(data => {
+            // Aquí procesamos la respuesta JSON
+            console.log('Respuesta del servidor:', data); // Imprime los datos en consola (para depuración)
+            
+            // Si el status de la respuesta es 'success', mostramos el mensaje de éxito
+            if (data.status === 'success') {
+                form.style.display = 'none'; // Ocultar el formulario
+                document.querySelector('.message').style.display = 'block'; // Mostrar el mensaje de éxito
+            } else {
+                alert('Hubo un problema con el envío del reclamo. Intenta nuevamente.');
+            }
+        })
+        .catch(error => {
+            // Manejar cualquier error que ocurra, ya sea en el fetch o al procesar la respuesta
+            console.error('Error al enviar el reclamo:', error);
+            alert('Hubo un error al enviar el reclamo');
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

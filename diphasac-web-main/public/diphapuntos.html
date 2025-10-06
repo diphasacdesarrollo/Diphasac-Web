@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVHT0NS30F"></script>
+    <script>
+        let currentURL = window.location.href;
+        if (!currentURL.includes("localhost") && !currentURL.includes("127.0.0.1")) {
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+            gtag('config', 'G-LVHT0NS30F');
+        }
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diphapuntos | Consulta aquí tus diphapuntos</title>
+
+    <meta name="description" content="Ingresa tu número de RUC para consultar tus puntos.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div
+    class="position-absolute z-3 d-flex pe-3 pe-md-4 pe-xl-0 ps-4 ps-md-5 align-items-center justify-content-between w-100 py-3 z-1">
+    <a href="index.html">
+        <img src="images/Diphasac-logo.svg" alt="" class="diphasac-navbar-logo">
+    </a>
+    <div class="d-none d-lg-flex">
+        <a href="nosotros.html" class="navbar-link d-block px-3">
+            Nosotros
+        </a>
+        <div class="bg-white" style="width: 2px"></div>
+        <a href="productos.html" class="navbar-link d-block px-3">
+            Productos
+        </a>
+        <div class="bg-white" style="width: 2px"></div>
+        <a href="compromiso.html" class="navbar-link d-block px-3">
+            Compromiso
+        </a>
+        <div class="bg-white d-none d-lg-block d-xl-none" style="width: 2px"></div>
+        <a href="diphapuntos.html" class="navbar-link d-none d-lg-block d-xl-none px-3">
+            Diphapuntos
+        </a>
+        <div class="bg-white" style="width: 2px"></div>
+        <a href="contacto.html" class="navbar-link d-block px-3">
+            Contacto
+        </a>
+    </div>
+    <a href="diphapuntos.html" class="d-none d-xl-block text-center navbar-puntos fw-medium text-uppercase px-5 py-2">
+        Club de puntos<br>
+        <span class="fw-black fs-4" style="line-height: 20px;">Diphasac</span>
+    </a>
+    <div class="d-block d-lg-none">
+        <a
+            href="#"
+            class="navbar-expand-link"
+            data-bs-toggle="modal"
+            data-bs-target="#navModal"
+        >
+            <img
+                src="icons/bars.svg"
+                alt="Menu"
+                height="30"
+                class="bars"
+            />
+        </a>
+    </div>
+</div>
+
+<!-- Cookies Settings -->
+<div id="cookie-alert" class="cookie-alert">
+    <div class="cookie-alert_text">
+      <h2>Preferencias de Cookies</h2>
+      <p>
+        Usamos cookies para mejorar la experiencia del usuario en nuestro
+        sitio web.
+      </p>
+    </div>
+    <div class="text-center">
+        <button id="accept-cookies" class="btn btn-primary btn-lg rounded-pill px-5"> Aceptar
+    </button> 
+        <button id="close-cookies" class="btn btn-danger btn-lg rounded-pill px-5">Rechazar</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-nav">
+        <div class="modal-content modal-content-nav p-5 navbar-gradient-bg d-flex flex-column h-100">
+
+            <a href="#" class="d-inline-block" data-bs-dismiss="modal" aria-label="Close"
+               style="position:absolute; right: 3rem;">
+                <img src="icons/x-solid.svg" alt="Menu" height="30" class="close-icon">
+            </a>
+
+            <div>
+
+                <!-- Home -->
+                <div class="mb-3">
+                    <a href="index.html" class="navbar-link text-uppercase fw-bold">
+                        Inicio
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="nosotros.html" class="navbar-link text-uppercase">
+                        Nosotros
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="productos.html" class="navbar-link text-uppercase">
+                        Productos
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="compromiso-social.html" class="navbar-link text-uppercase">
+                        Compromiso Social
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="farmacovigilancia.html" class="navbar-link text-uppercase">
+                        Farmacovigilancia
+                    </a>
+                </div>
+
+                <div class="mb-5">
+                    <a href="contacto.html" class="navbar-link text-uppercase">
+                        Contacto
+                    </a>
+                </div>
+
+                <div>
+                    <a href="diphapuntos.html"
+                       class="d-block text-center navbar-puntos  rounded-pill fw-medium text-uppercase px-5 py-2">
+                        Club de puntos<br>
+                        <span class="fw-black fs-4" style="line-height: 20px;">Diphasac</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="flex-grow-1 flex-fill">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<main>
+
+    <section id="diphapuntos-hero" class="diphasac-gradient" style="padding-top: 100px;">
+        <div class="overlay">
+            <img src="images/diphapuntos-hero.png" alt="Overlay Image">
+        </div>
+        <div class="content w-100 pb-4 px-4 px-md-5">
+            <div class="row mx-auto" style="max-width: 1400px;">
+                <div class="order-1 order-sm-0 col-12 col-sm-7 col-md-6 my-auto pb-4 pb-sm-0">
+                    <h2 class="fs-1 fw-semibold text-center mx-auto" style="max-width: 600px; color: #14619D;">
+                        <span style="color: #92CCF0">Consulta aquí tus</span><br>
+                        <span class="text-uppercase fw-extrabold text-white">DIPHAPUNTOS</span>
+                    </h2>
+                    <p class="text-white">
+                        Ingresa tu
+                        <strong>número de RUC</strong>
+                        para consultar tus Diphapuntos acumulados
+                    </p>
+                    <div class="mx-auto" style="max-width: 700px;">
+                        <div id="diphapuntos" class="et_pb_with_border et_pb_module et_pb_contact_form_0 et_pb_contact_form_container clearfix"
+                             data-form_unique_num="0" data-form_unique_id="87c5ed9e-1edf-4a6f-8478-9f04b15712ab">
+                            <div class="et-pb-contact-message"></div>
+                            <div class="et_pb_contact">
+                                <form class="et_pb_contact_form clearfix" method="post" action="https://www.diphasac.com/diphapuntos/">
+                                    <div class="form-floating mb-3 mx-auto" data-id="ruc" style="max-width: 341.58px">
+                                        <input type="text" class="form-control" id="et_pb_contact_ruc_0" placeholder="Número de RUC" style="text-align: center">
+                                        <label for="et_pb_contact_ruc_0">Número de RUC</label>
+                                    </div>
+                                    <input type="hidden" value="et_contact_proccess" name="et_pb_contactform_submit_0">
+                                    <div class="et_contact_bottom_container text-center">
+                                        <button type="submit" name="et_builder_submit_button" class="btn btn-primary btn-lg rounded-pill px-5">
+                                            Consultar Diphapuntos
+                                        </button>
+                                    </div>
+                                    <input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-0"
+                                           name="_wpnonce-et-pb-contact-form-submitted-0" value="673b91fd10"><input type="hidden"
+                                                                                                                    name="_wp_http_referer"
+                                                                                                                    value="/diphapuntos/">
+                                </form>
+                            </div>
+                        </div>
+
+                        <script>
+                            function send_data() {
+                                form_button.disabled = true;
+                                // Send json data to url in post request and receive json using fetch
+                                fetch('https://leads-fastapi.herokuapp.com/diphapuntos', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json'
+                                    },
+                                    body: JSON.stringify({
+                                        ruc: ruc.value
+                                    })
+                                })
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        if (data.found) {
+                                            message_html = data.name + " ha acumulado " + "<span style='color:white;font-size:24px;font-weight:700;'>" + data.points + "</span>" + " Diphapuntos.";
+                                            document.getElementById('form-message').innerHTML = message_html;
+                                            form_button.disabled = false;
+                                        } else {
+                                            message_html = "No se encontró el RUC: <strong>" + ruc.value + "</strong>";
+                                            document.getElementById('form-message').innerHTML = message_html;
+                                            form_button.disabled = false;
+                                        }
+                                    })
+                                    .catch(error => {
+                                        alert('Error: ' + error);
+                                    });
+                            }
+
+                            window.onload = function () {
+                                form_container = document.getElementById('diphapuntos');
+                                form = form_container.querySelector('form');
+                                ruc = document.getElementById('et_pb_contact_ruc_0');
+                                form_parent = form.parentNode;
+                                form_button = form.querySelector('button');
+
+                                // Add a message behind the form
+                                message = document.createElement('p');
+                                message.style.marginTop = '1.5rem';
+                                message.style.color = "white";
+                                message.id = 'form-message'
+                                form_parent.append(message);
+
+                                form.onsubmit = function (e) {
+                                    e.preventDefault();
+                                    send_data();
+                                }
+                                form_button.onclick = function () {
+                                    send_data();
+                                }
+                            }
+                        </script>
+                    </div>
+
+                </div>
+                <div class="col-6 col-sm-5 col-md-6 my-auto mx-auto">
+                    <img src="images/diphapuntos-iphone.webp" alt="" class="w-100" style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Logos infinte -->
+    <section class="px-4 px-md-5 pt-5 pb-4">
+        <div class="mx-auto" style="max-width: 1400px">
+            <div class="logos-carousel-container">
+                <div class="logos-carousel">
+                    <div>
+                        <img src="images/Nayflex_logo.svg" alt="" width="150" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphapidc%20Long.webp" alt="" width="110" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Dipha%20Zinc%20Kid.svg" alt="" width="160" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Natuvarix.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Prostamicil.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Hemzon.svg" alt="" width="170" loading="eager">
+                    </div>
+                </div>
+                <div class="logos-carousel">
+                    <div>
+                        <img src="images/Nayflex_logo.svg" alt="" width="150" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphapidc%20Long.webp" alt="" width="110" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Dipha%20Zinc%20Kid.svg" alt="" width="160" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Natuvarix.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Prostamicil.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Hemzon.svg" alt="" width="170" loading="eager">
+                    </div>
+                </div>
+                <div class="logos-carousel">
+                    <div>
+                        <img src="images/Nayflex_logo.svg" alt="" width="150" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphapidc%20Long.webp" alt="" width="110" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Dipha%20Zinc%20Kid.svg" alt="" width="160" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Natuvarix.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Prostamicil.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Hemzon.svg" alt="" width="170" loading="eager">
+                    </div>
+                </div>
+                <div class="logos-carousel">
+                    <div>
+                        <img src="images/Nayflex_logo.svg" alt="" width="150" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphapidc%20Long.webp" alt="" width="110" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Dipha%20Zinc%20Kid.svg" alt="" width="160" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Natuvarix.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Prostamicil.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Hemzon.svg" alt="" width="170" loading="eager">
+                    </div>
+                </div>
+                <div class="logos-carousel">
+                    <div>
+                        <img src="images/Nayflex_logo.svg" alt="" width="150" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphapidc%20Long.webp" alt="" width="110" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Dipha%20Zinc%20Kid.svg" alt="" width="160" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Natuvarix.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Prostamicil.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Hemzon.svg" alt="" width="170" loading="eager">
+                    </div>
+                </div>
+                <div class="logos-carousel">
+                    <div>
+                        <img src="images/Nayflex_logo.svg" alt="" width="150" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphanatur%20300.webp" alt="" width="200" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Diphapidc%20Long.webp" alt="" width="110" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Dipha%20Zinc%20Kid.svg" alt="" width="160" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Natuvarix.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Prostamicil.svg" alt="" width="180" loading="eager">
+                    </div>
+                    <div>
+                        <img src="images/Hemzon.svg" alt="" width="170" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-5 px-4 px-md-5">
+        <h2 class="fs-1 fw-semibold text-center mx-auto" style="max-width: 600px; color: #14619D;">
+            <span style="color: #1774BB">¿Qué puedo canjear con</span><br>
+            <span class="text-uppercase fw-extrabold">MIS PUNTOS?</span>
+        </h2>
+        <div class="mx-auto" style="max-width: 700px;">
+            <div class="scribd_iframe_wrapper">
+                <iframe class="scribd_iframe_embed" title="Catalogo Club de Puntos Diphasac - Horizontal" src="https://www.scribd.com/embeds/747823260/content?start_page=1&view_mode=slideshow&access_key=key-98WkR9Hd2Rw4z4BVzhT5" tabindex="0" data-auto-height="false" data-aspect-ratio="0.7044566067240031" scrolling="no" width="400" height="600" frameborder="0"></iframe><p  style="   margin: 12px auto 6px auto;   font-family: Helvetica,Arial,Sans-serif;   font-style: normal;   font-variant: normal;   font-weight: normal;   font-size: 14px;   line-height: normal;   font-size-adjust: none;   font-stretch: normal;   -x-system-font: none;   display: block;"   ><a title="View Catalogo Club de Puntos Diphasac - Horizontal on Scribd" href="https://www.scribd.com/document/747823260/Catalogo-Club-de-Puntos-Diphasac-Horizontal#from_embed"  style="text-decoration: underline;">Catalogo Club de Puntos Dip...</a> by <a title="View contacto's profile on Scribd" href="https://www.scribd.com/user/763790312/contacto#from_embed"  style="text-decoration: underline;">contacto</a></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Preguntas frecuentes -->
+    <section class="py-5 px-4 px-md-5 mt-5 mt-md-0">
+        <div class="mx-auto fadeElement" style="max-width: 1400px">
+            <h2 class="fs-1 fw-semibold text-center mx-auto" style="max-width: 600px; color: #14619D;">
+                <span style="color: #1774BB">Preguntas</span><br>
+                <span class="text-uppercase fw-extrabold">frecuentes</span>
+            </h2>
+            <div class="mx-auto fadeElement mt-5" style="max-width: 800px">
+
+                <!-- FAQ 1 -->
+                <div
+                    class="faq-question py-4 px-4 d-flex justify-content-between w-100 rounded-pill text-uppercase align-items-center collapsed"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <div class="text-center flex-grow-1 flex-fill">
+                        ¿Cómo puedo acumular puntos DIPHASAC?
+                    </div>
+                    <img src="icons/plus.svg" alt="" width="20" id="collapse-icon">
+                </div>
+                <div class="px-2 collapse" id="collapseExample" style="">
+                    <div class="faq-answer px-4 px-md-5 py-3 text-center mt-3 mt-sm-4">
+                        <p class="mb-0">
+                            Comprando productos de marca Rx, OTC o Personal Care. Productos Genéricos (GX)
+                            no entran en promoción.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div
+                    class="mt-4 faq-question py-4 px-4 d-flex justify-content-between w-100 rounded-pill text-uppercase align-items-center collapsed"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false"
+                    aria-controls="collapseExample2">
+                    <div class="text-center flex-grow-1 flex-fill">
+                        ¿A cuántos soles (S/.) equivale 1 punto DIPHASAC?
+                    </div>
+                    <img src="icons/plus.svg" alt="" width="20" id="collapse-icon2">
+                </div>
+                <div class="px-2 collapse" id="collapseExample2" style="">
+                    <div class="faq-answer px-4 px-md-5 py-3 text-center mt-3 mt-sm-4">
+                        <p class="mb-0">
+                            Por cada S/. 40.00 en compras, obtienes 01 Punto Diphasac,
+                            acumulable a lo largo de la campaña.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div
+                    class="mt-4 faq-question py-4 px-4 d-flex justify-content-between w-100 rounded-pill text-uppercase align-items-center collapsed"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false"
+                    aria-controls="collapseExample3">
+                    <div class="text-center flex-grow-1 flex-fill">
+                        ¿Es una promoción acumulable?
+                    </div>
+                    <img src="icons/plus.svg" alt="" width="20" id="collapse-icon3">
+                </div>
+                <div class="px-2 collapse" id="collapseExample3" style="">
+                    <div class="faq-answer px-4 px-md-5 py-3 text-center mt-3 mt-sm-4">
+                        <p class="mb-0">
+                            Sí, es una promoción acumulable. Pero no se combinan con otras promociones vigentes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div
+                    class="mt-4 faq-question py-4 px-4 d-flex justify-content-between w-100 rounded-pill text-uppercase align-items-center collapsed"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false"
+                    aria-controls="collapseExample4">
+                    <div class="text-center flex-grow-1 flex-fill">
+                        ¿Cuál es la duración de la promoción?
+                    </div>
+                    <img src="icons/plus.svg" alt="" width="20" id="collapse-icon4">
+                </div>
+                <div class="px-2 collapse" id="collapseExample4" style="">
+                    <div class="faq-answer px-4 px-md-5 py-3 text-center mt-3 mt-sm-4">
+                        <p class="mb-0">
+                            La promoción es válida desde el 01 de Enero hasta el 31 de Diciembre de 2024.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div
+                    class="mt-4 faq-question py-4 px-4 d-flex justify-content-between w-100 rounded-pill text-uppercase align-items-center collapsed"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false"
+                    aria-controls="collapseExample5">
+                    <div class="text-center flex-grow-1 flex-fill">
+                        ¿Es válido a nivel nacional?
+                    </div>
+                    <img src="icons/plus.svg" alt="" width="20" id="collapse-icon5">
+                </div>
+                <div class="px-2 collapse" id="collapseExample5" style="">
+                    <div class="faq-answer px-4 px-md-5 py-3 text-center mt-3 mt-sm-4">
+                        <p class="mb-0">
+                            Sí, es una promoción válida a nivel nacional, Lima y Provincias.
+                            Válido para compras directas o a través de nuestros distribuidores
+                            con precios de listas y vigentes y sin cargo a devolución:
+                            DICAR – Lima y Norte del país, MIDHCO – Sierra Central, M & M – Sur Grande
+                        </p>
+                    </div>
+                </div>
+
+                <script>
+
+                    const myCollapsible = document.getElementById('collapseExample')
+                    myCollapsible.addEventListener('show.bs.collapse', event => {
+                        document.getElementById("collapse-icon").src = "icons/minus.svg";
+                    })
+                    myCollapsible.addEventListener('hide.bs.collapse', event => {
+                        document.getElementById("collapse-icon").src = "icons/plus.svg";
+
+                    })
+
+                    const myCollapsible2 = document.getElementById('collapseExample2')
+                    myCollapsible2.addEventListener('show.bs.collapse', event => {
+                        document.getElementById("collapse-icon2").src = "icons/minus.svg";
+                    })
+                    myCollapsible2.addEventListener('hide.bs.collapse', event => {
+                        document.getElementById("collapse-icon2").src = "icons/plus.svg";
+                    })
+
+                    const myCollapsible3 = document.getElementById('collapseExample3')
+                    myCollapsible3.addEventListener('show.bs.collapse', event => {
+                        document.getElementById("collapse-icon3").src = "icons/minus.svg";
+                    })
+                    myCollapsible3.addEventListener('hide.bs.collapse', event => {
+                        document.getElementById("collapse-icon3").src = "icons/plus.svg";
+                    })
+
+                    const myCollapsible4 = document.getElementById('collapseExample4')
+                    myCollapsible4.addEventListener('show.bs.collapse', event => {
+                        document.getElementById("collapse-icon4").src = "icons/minus.svg";
+                    })
+                    myCollapsible4.addEventListener('hide.bs.collapse', event => {
+                        document.getElementById("collapse-icon4").src = "icons/plus.svg";
+                    })
+
+                    const myCollapsible5 = document.getElementById('collapseExample5')
+                    myCollapsible5.addEventListener('show.bs.collapse', event => {
+                        document.getElementById("collapse-icon5").src = "icons/minus.svg";
+                    })
+                    myCollapsible5.addEventListener('hide.bs.collapse', event => {
+                        document.getElementById("collapse-icon5").src = "icons/plus.svg";
+                    })
+
+                </script>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer id="footer" class="py-4 py-md-5 px-4 px-md-5 text-white">
+    <div class="mx-auto" style="max-width: 1400px;">
+        <div class="container-fluid px-0">
+            <div class="row g-5">
+
+                <!-- Diphasac info -->
+                <div class="col-9 col-sm-12 col-md-4 order-1 order-md-0">
+                    <div class="mb-4">
+                        <img src="images/Diphasac-blanco.webp" alt="" class="w-50">
+                    </div>
+                    <p>
+                        Ubicación: Av. Alfredo Benavides 768,
+                        interior 604, Miraflores, Lima - Perú
+                    </p>
+                    <p>
+                        Contacto: 932 329 579
+                    </p>
+                    <p>
+                        Correo: contacto@diphasac.com
+                    </p>
+                    <div class="d-flex mt-3">
+                        <a href="https://www.facebook.com/diphasac" target="_blank"
+                           class="media-icon-link position-relative">
+                            <img src="images/facebook-f.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                        <a href="https://www.instagram.com/diphasac.pe/" target="_blank"
+                           class="media-icon-link position-relative ms-3">
+                            <img src="images/instagram.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                        <a href="https://www.tiktok.com/@diphasac" target="_blank"
+                           class="media-icon-link position-relative ms-3">
+                            <img src="images/tiktok.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                        <a href="https://www.linkedin.com/company/diphasac/" target="_blank"
+                           class="media-icon-link position-relative ms-3">
+                            <img src="images/linkedin.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer links -->
+                <div class="col-12 col-md-8 order-0 order-md-1">
+                    <div class="row">
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <h2 class="fs-5 fw-bold mb-4">Términos</h2>
+
+                            <div>
+                                <a href="nosotros.html" class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Acerca de nosotros
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="" class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Términos y condiciones
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="Codigo-de-Etica-DIPHASAC.pdf" target="_blank" class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Código de Ética
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="Politica-de-Cumplimiento-DIPHASAC.pdf" target="_blank"
+                                   class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Política de cumplimiento
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="Politica-de-Tratamiento-de-Datos-Personales.pdf" target="_blank"
+                                   class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Política de Tratamiento de Datos
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="librodereclamaciones.html" target="_blank"
+                                   class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Libro de Reclamaciones
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 col-sm-7 col-md-7">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-6 mt-5 mt-sm-0">
+                                    <h2 class="fs-5 fw-bold mb-4">Productos</h2>
+
+                                    <div>
+                                        <a href="linea-otc.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Línea OTC
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="linea-rx.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Línea RX
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="linea-gx.html" target="_blank" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Línea GX
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="personal-care.html" target="_blank" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Personal Care
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-6 mt-5 mt-sm-0">
+                                    <h2 class="fs-5 fw-bold mb-4">Bienestar</h2>
+
+                                    <div>
+                                        <a href="farmacovigilancia.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Farmacovigilancia
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="compromiso-social.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Compromiso Social
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-5">
+            <p>RUC: 20546207219</p>
+            <p>Diphasac S.A.C.</p>
+        </div>
+        <div style="height: 2px; background-color: #92CCF0"></div>
+        <p class="mt-4 mb-0 text-center fw-semibold">
+            Copyright ©
+            <a class="text-white" href="">DIPHASAC SAC.</a>
+            2024 – Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+
+</body>
+</html>

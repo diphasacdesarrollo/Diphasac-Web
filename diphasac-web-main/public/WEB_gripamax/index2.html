@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gripamax</title>
+  <link rel="stylesheet" href="estilos_2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <img src="imagesgripamax/gripamax_icon.png" alt="Logo Gripamax" class="logo">
+    <button class="hamburger" id="hamburger" >&#9776;</button>
+    <nav class="navbar-links" id="navbar-links">
+      <a href="#inicio">INICIO</a>
+      <a href="#contiene">¿QUE CONTIENE?</a>
+      <a href="#beneficios">BENEFICIOS</a>
+      <a href="../farmacovigilancia.html">FARMACOVIGILANCIA</a>
+    </nav>
+    <a href="#comprar" class="comprar">Comprar</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-background"></div>
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <img src="imagesgripamax/slogan_hero.svg" alt="Slogan Gripamax" class="slogan-svg" />
+        <img src="imagesgripamax/caja_gripa.png" alt="Producto Gripamax" class="producto">
+      </div>
+    
+  </section>
+
+  <!-- ¿QUE CONTIENE -->
+  <section class="contiene" id="contiene">
+    <h2 class="contiene-title">¿Qué contiene?</h2>
+    <p class="contiene-desc">
+      Gripamax otorga un <strong class="negrita">alivio inmediato</strong> gracias a su 
+      <span class="etiqueta-amarilla">triple fórmula avanzada</span>
+    <div class="contiene-content">
+      <div class="contiene-izq">
+        <div class="bicho-wrapper">
+          <img src="imagesgripamax/bicho_brazos_cruzados.png" alt="Bicho" class="bicho" />
+          <div class="pills">
+            <a href="#" onclick="event.preventDefault();">
+            <div class="pill pill-izquierda">Bromhidrato de Dextrometorfano 10 mg</div>
+          </a>
+            <a href="#" onclick="event.preventDefault();">
+            <div class="pill pill-derecha">Clorhidrato de Fenilefrina 5 mg</div>
+          </a>
+            <a href="#" onclick="event.preventDefault();">
+            <div class="pill pill-abajo">Paracetamol 325 mg</div>
+          </a>  
+          </div>  
+        </div>
+      </div>
+  
+      <div class="contiene-der">
+        <div class="card">
+          <h3>Cada cápsula alivia los siguientes síntomas:</h3>
+          <p>Reduce la fiebre y alivia el dolor corporal, devolviéndote la energía.</p>
+          <div class="flecha-box">➜</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="beneficios" id="beneficios">
+    <h2 class="beneficios-title">Beneficios</h2>
+  
+    <div class="beneficios-layout">
+      <!-- 🟡 Lista izquierda -->
+      <div class="beneficios-lista">
+        <div class="beneficio-item">
+          <svg class="icono-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="beneficio-texto">
+            <span class="titulo">Descongestionante potente:</span>
+            <p>Alivia la obstrucción nasal para que respires sin molestias.</p>
+          </div>
+        </div>
+  
+        <div class="beneficio-item">
+          <svg class="icono-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="beneficio-texto">
+            <span class="titulo">Antitusivo efectivo:</span>
+            <p>Calma la tos seca y persistente.</p>
+          </div>
+        </div>
+  
+        <div class="beneficio-item">
+          <svg class="icono-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="beneficio-texto">
+            <span class="titulo">Antipirético y analgésico:</span>
+            <p>Reduce la fiebre y el malestar general.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- 🔴 Imagen derecha -->
+      <div class="beneficios-imagenes">
+        <img src="imagesgripamax/landing_page_gripamax_CAPSULA.png" alt="cápsula" class="capsula" />
+      </div>
+    </div>
+  
+    <!-- Pie de uso -->
+    <p class="modo-uso">
+      <strong>Modo de uso:</strong> <span class="negro">Adultos y niños mayores de 12 años:</span>
+      Tomar <span class="negro">1 cápsula cada 4 a 6 horas</span> según necesidad.
+      <span class="negro">No exceder 4 cápsulas en 24 horas.</span>
+    </p>
+  </section>
+  
+    <!-- TESTIMONIOS -->
+    <section class="testimonios" id="testimonios">
+      <h2 class="testimonios-title">Testimonios reales</h2>
+      <p class="testimonios-desc">GRIPAMAX tiene muchos beneficios para cuidar tu salud.<br>El Bicho te muestra alguno de ellos:
+
+        <div class="testimonios-elementos"> 
+        <div class="testimonios-grid">
+          
+          <div class="testimonio testimonio-carlos">
+            <h3 class="nombre">Luis R.<span class="edad">22 años</span></h3>
+            <div class="linea"></div>
+            <div class="estrellas">⭐⭐⭐⭐⭐</div>
+            <p class="comentario">
+              “GRIPAMAX me permitió seguir con mi día sin los molestos síntomas de la gripe. ¡Muy recomendado!”
+            </p>
+            <img src="imagesgripamax/cara_1.png" alt="cara_1" class="cara_1">
+          </div>
+              
+          <div class="testimonios-columna">
+            <div class="testimonio">
+              <h3 class="nombre">Andrea M.<span class="edad">30 años</span></h3>
+              <div class="linea"></div>
+              <div class="estrellas">⭐⭐⭐⭐⭐</div>
+              <p class="comentario">
+                “La congestión y la tos desaparecieron en pocas horas. ¡Me sentí como nuevo!"
+              </p>
+              <img src="imagesgripamax/cara_2.png" alt="cara_2" class="cara_2">
+            </div>
+      
+            <div class="testimonio">
+              <h3 class="nombre">Luis <span class="edad">20 años</span></h3>
+              <div class="linea"></div>
+              <div class="estrellas">⭐⭐⭐⭐⭐</div>
+              <p class="comentario">
+                “Es el único medicamento que me funciona realmente rápido. Siempre lo tengo en casa”
+              </p>
+              <img src="imagesgripamax/cara_3.png" alt="cara_3" class="cara_3">
+            </div>
+          </div>
+        </div>
+          <!-- Columna derecha: imagen -->
+          
+            <img class="testimonios-img" src="imagesgripamax/bicho con lupa.png" alt="decoracion" />
+            
+      </div>
+    </div> 
+    </section>
+    <!-- Donde encontrarnos -->
+  <section class="encontrarlo" id="encontrarlo">
+    <h2 class="encontrarlo-title">¿Dónde encontrarlo?</h2>
+    <p class="encontrarlo-desc"> <strong>Encuéntralo</strong> en tu <strong>farmacia más cercana.</strong>
+    
+    <div class="farmacias">
+      <div class="farmacia-row">
+        <div class="farmacia-item">
+          <a href="https://www.mifarma.com.pe/buscador?keyword=diphasac" class="farmacia-link" target="_blank">
+            <img src="imagesgripamax/Mifarma.webp" alt="Mifarma">
+          </a>
+        </div>
+    
+        <div class="farmacia-item">
+          <a href="https://boticasperu.pe/catalogsearch/result/?q=diphasac" class="farmacia-link" target="_blank">
+            <img src="imagesgripamax/Boticas-peru.webp" alt="Boticas Perú">
+          </a>
+        </div>
+    
+        <div class="farmacia-item">
+          <a href="https://inkafarma.pe/buscador?keyword=diphasac" class="farmacia-link" target="_blank">
+            <img src="imagesgripamax/Inkafarma.webp" alt="Inkafarma">
+          </a>
+        </div>
+      </div>
+    
+      <div class="farmacia-row">
+        <div class="farmacia-item">
+          <a href="https://novafarmawimer.pe/?s=dipha&amp;post_type=product&amp;dgwt_wcas=1" class="farmacia-link" target="_blank">
+            <img src="imagesgripamax/Novafarma.webp" alt="Novafarma">
+          </a>
+        </div>
+    
+        <div class="farmacia-item">
+          <a href="https://www.hogarysalud.com.pe/?s=dipha&amp;post_type=product" class="farmacia-link" target="_blank">
+            <img src="imagesgripamax/Boticas-hogar-y-salud.webp" alt="Boticas Hogar y Salud">
+          </a>
+        </div>
+    
+        <div class="farmacia-item">
+          <a href="https://farmaciaslider.pe/category_product_search?product_name=dipha" class="farmacia-link" target="_blank">
+            <img src="imagesgripamax/Farmacias-Lider.png" alt="Farmacias Líder">
+          </a>
+        </div>
+      </div>
+  </section>
+  
+    <!-- Preguntas frecuentes -->
+  <section class="preguntas" id="preguntas">
+    <h2 class="preguntas-title">Preguntas Frecuentes</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">
+          ¿Cuál es la dosis adecuada de GRIPAMAX?
+          <span class="faq-icon">+</span> 
+        </button>
+        <div class="faq-answer">
+          <p>
+            Para adultos y niños mayores de 12 años: Tomar 1 cápsula cada 4 a 6 horas según necesidad. No exceder 4 cápsulas en 24 horas.
+          </p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          ¿Puedo tomar GRIPAMAX si tengo presión alta?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Consulta a tu médico antes de tomarlo si padeces hipertensión.
+          </p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          ¿GRIPAMAX produce sueño?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            No, su fórmula no tiene efecto sedante.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          ¿Puedo combinarlo con otros medicamentos? 
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Es importante leer las indicaciones y consultar con un profesional de la salud.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    
+  </section>
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagesgripamax/logo_sin_slogan.png" alt="Logo Diphasac" />
+      </div>
+  
+      <div class="footer-info">
+        <p>Alfredo Benavides 768, Int. 604,<br>Miraflores, Lima - Perú</p>
+        <p>Contacto: 932 329 579</p>
+        <p>Correo: contacto@diphasac.com</p>
+        <p>RUC: 20546207219</p>
+        <p>Diphasac S.A.C.</p>
+      </div>
+  
+      <div class="footer-links">
+        <a href="#">➤ Política de privacidad</a>
+        <a href="#">➤ Términos y Condiciones</a>
+        <a href="../Codigo-de-Etica-DIPHASAC.pdf">➤ Código de ética</a>
+        <a href="../Politica-de-Cumplimiento-DIPHASAC.pdf">➤ Política de cumplimiento</a>
+      </div>
+    </div>
+  
+    <div class="footer-social">
+      <a href="https://www.facebook.com/diphasac" target="_blank"><img src="imagesgripamax/facebook-f.svg" alt="Facebook" /></a>
+      <a href="https://www.instagram.com/diphasac.pe/" target="_blank"><img src="imagesgripamax/instagram.svg" alt="Instagram" /></a>
+      <a href="https://www.tiktok.com/@diphasac" target="_blank"><img src="imagesgripamax/tiktok.svg" alt="TikTok" /></a>
+    </div>
+  
+    <hr />
+  
+    <div class="footer-copy">
+      <p>Copyright© Prostamicil 2024 – Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="main_2.js"></script>
+   
+</body>
+</html>

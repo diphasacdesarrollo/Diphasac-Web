@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVHT0NS30F"></script>
+    <script>
+        let currentURL = window.location.href;
+        if (!currentURL.includes("localhost") && !currentURL.includes("127.0.0.1")) {
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+            gtag('config', 'G-LVHT0NS30F');
+        }
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diphasac</title>
+
+    <meta name="description" content="Generando bienestar">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="position-absolute d-flex pe-3 pe-md-4 pe-xl-0 ps-4 ps-md-5 align-items-center justify-content-between w-100 py-3 z-3">
+    <a href="index.html">
+        <img src="images/logo_white.png" alt="" class="diphasac-navbar-logo" >
+    </a>
+    <div class="d-none d-lg-flex">
+        <a href="nosotros.html" class="navbar-link d-block px-3">
+            Nosotros
+        </a>
+        <div class="bg-white" style="width: 2px"></div>
+        <a href="productos.html" class="navbar-link d-block px-3">
+            Productos
+        </a>
+        <div class="bg-white" style="width: 2px"></div>
+        <a href="compromiso.html" class="navbar-link d-block px-3">
+            Compromiso
+        </a>
+        <div class="bg-white d-none d-lg-block d-xl-none" style="width: 2px"></div>
+        <a href="diphapuntos.html" class="navbar-link d-none d-lg-block d-xl-none px-3">
+            Diphapuntos
+        </a>
+        <div class="bg-white" style="width: 2px"></div>
+        <a href="contacto.html" class="navbar-link d-block px-3">
+            Contacto
+        </a>
+    </div>
+    <div class="d-none d-xl-block" style="width: 230px;"></div>
+    <div class="d-block d-lg-none">
+        <a
+            href="#"
+            class="navbar-expand-link"
+            data-bs-toggle="modal"
+            data-bs-target="#navModal"
+        >
+            <img
+                src="icons/bars.svg"
+                alt="Menu"
+                height="30"
+                class="bars"
+            />
+        </a>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-nav">
+        <div class="modal-content modal-content-nav p-5 navbar-gradient-bg d-flex flex-column h-100">
+
+            <a href="#" class="d-inline-block" data-bs-dismiss="modal" aria-label="Close"
+               style="position:absolute; right: 3rem;">
+                <img src="icons/x-solid.svg" alt="Menu" height="30" class="close-icon">
+            </a>
+
+            <div>
+
+                <!-- Home -->
+                <div class="mb-3">
+                    <a href="index.html" class="navbar-link text-uppercase fw-bold">
+                        Inicio
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="nosotros.html" class="navbar-link text-uppercase">
+                        Nosotros
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="productos.html" class="navbar-link text-uppercase">
+                        Productos
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="compromiso-social.html" class="navbar-link text-uppercase">
+                        Compromiso Social
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <a href="farmacovigilancia.html" class="navbar-link text-uppercase">
+                        Farmacovigilancia
+                    </a>
+                </div>
+
+                <div class="mb-5">
+                    <a href="contacto.html" class="navbar-link text-uppercase">
+                        Contacto
+                    </a>
+                </div>
+
+               
+
+            </div>
+
+            <div class="flex-grow-1 flex-fill">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<section class="position-relative compromiso-social" >
+    <div class="compromiso-background"></div>
+    <div class="compromiso-full-page-div">
+    </div>
+    <div class="text-overlay text-center">
+        <h1 class="text-white fw-black text-shadow">
+            Compromiso Social
+        </h1>
+        <p class="fs-4 text-white mt-4" style="max-width: 700px;">
+            El compromiso social es esencial para Diphasac porque
+            nos permite contribuir positivamente al bienestar
+            de la sociedad y el medio ambiente
+        </p>
+    </div>
+</section>
+
+<section class="px-4 px-md-5 py-5">
+    <div class="container-fluid mx-auto" style="max-width: 1400px; text-align: justify;">
+        <div class="row">
+            <div class="col-12 col-md-5 my-auto">
+                <p class="text-white fs-5" style="max-width: 500px;">   
+                    En diciembre de 2024, DIPHASAC llevó a cabo una chocolatada solidaria destinada a brindar
+                    alegría a los niños de un asentamiento humano en situación de vulnerabilidad. Esta iniciativa
+                    forma parte del compromiso social de la empresa, reafirmando su responsabilidad con las comunidades
+                    que más lo necesitan. A través de este gesto, DIPHASAC contribuyó a regalar momentos de esperanza 
+                    y unión en una fecha tan significativa como la Navidad.
+                </p>
+            </div>
+            <div class="col-12 col-md-7 my-auto">
+                <div id="carouselExample" class="carousel slide d-flex">
+                    <div class="carousel-inner" style="padding-left: 70px; padding-right: 70px;">
+                        <div class="carousel-item active">
+                            <div class="aspect-ratio-3-4">
+                                <div class="aspect-ratio-3-4-content rounded-5">
+                                    <img src="images/1.jpg" alt="Covering Photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aspect-ratio-3-4">
+                                <div class="aspect-ratio-3-4-content rounded-5">
+                                    <img src="images/2.JPG" alt="Covering Photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aspect-ratio-3-4">
+                                <div class="aspect-ratio-3-4-content rounded-5">
+                                    <img src="images/3.JPG" alt="Covering Photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aspect-ratio-3-4">
+                                <div class="aspect-ratio-3-4-content rounded-5">
+                                    <img src="images/4.JPG" alt="Covering Photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aspect-ratio-3-4">
+                                <div class="aspect-ratio-3-4-content rounded-5">
+                                    <img src="images/5.JPG" alt="Covering Photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"
+                            style="width: 70px; opacity: 1;">
+                        <img src="icons/left-arrow.svg" width="50">
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"
+                            style="width: 70px; opacity: 1;">
+                        <img src="icons/right-arrow.svg" width="50">
+                    </button>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<footer id="footer" class="py-4 py-md-5 px-4 px-md-5 text-white">
+    <div class="mx-auto" style="max-width: 1400px;">
+        <div class="container-fluid px-0">
+            <div class="row g-5">
+
+                <!-- Diphasac info -->
+                <div class="col-9 col-sm-12 col-md-4 order-1 order-md-0">
+                    <div class="mb-4">
+                        <img src="images/Diphasac-blanco.webp" alt="" class="w-50">
+                    </div>
+                    <p>
+                        Ubicación: Av. Alfredo Benavides 768,
+                        interior 604, Miraflores, Lima - Perú
+                    </p>
+                    <p>
+                        Contacto: 932 329 579
+                    </p>
+                    <p>
+                        Correo: contacto@diphasac.com
+                    </p>
+                    <div class="d-flex mt-3">
+                        <a href="https://www.facebook.com/diphasac" target="_blank"
+                           class="media-icon-link position-relative">
+                            <img src="images/facebook-f.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                        <a href="https://www.instagram.com/diphasac.pe/" target="_blank"
+                           class="media-icon-link position-relative ms-3">
+                            <img src="images/instagram.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                        <a href="https://www.tiktok.com/@diphasac" target="_blank"
+                           class="media-icon-link position-relative ms-3">
+                            <img src="images/tiktok.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                        <a href="https://www.linkedin.com/company/diphasac/" target="_blank"
+                           class="media-icon-link position-relative ms-3">
+                            <img src="images/linkedin.svg" alt="" class="position-absolute media-icon"
+                                 height="20">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer links -->
+                <div class="col-12 col-md-8 order-0 order-md-1">
+                    <div class="row">
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <h2 class="fs-5 fw-bold mb-4">Términos</h2>
+
+                            <div>
+                                <a href="nosotros.html" class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Acerca de nosotros
+                                    </div>
+                                </a>
+                            </div>
+
+                            
+
+                            <div class="mt-4">
+                                <a href="Codigo-de-Etica-DIPHASAC.pdf" target="_blank" class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Código de Ética
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="Politica-de-Cumplimiento-DIPHASAC.pdf" target="_blank"
+                                   class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Política de cumplimiento
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="Politica-de-Tratamiento-de-Datos-Personales.pdf" target="_blank"
+                                   class="footer-link">
+                                    <div class="me-2">
+                                        <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                    </div>
+                                    <div class="d-inline">
+                                        Política de Tratamiento de Datos
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        <div class="mt-4">
+                            <a href="librodereclamaciones.html" target="_blank"
+                               class="footer-link">
+                                <div class="me-2">
+                                    <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                </div>
+                                <div class="d-inline">
+                                    Libro de Reclamaciones
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="col-12 col-sm-7 col-md-7">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-6 mt-5 mt-sm-0">
+                                    <h2 class="fs-5 fw-bold mb-4">Productos</h2>
+
+                                    <div>
+                                        <a href="linea-otc.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Línea OTC
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="linea-rx.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Línea RX
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="linea-gx.html" target="_blank" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Línea GX
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="personal-care.html" target="_blank" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Personal Care
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-6 mt-5 mt-sm-0">
+                                    <h2 class="fs-5 fw-bold mb-4">Bienestar</h2>
+
+                                    <div>
+                                        <a href="farmacovigilancia.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Farmacovigilancia
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <a href="compromiso-social.html" class="footer-link">
+                                            <div class="me-2">
+                                                <img src="images/footer-bullet-point.svg" alt="" height="15">
+                                            </div>
+                                            <div class="d-inline">
+                                                Compromiso Social
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-5">
+            <p>RUC: 20546207219</p>
+            <p>Diphasac S.A.C.</p>
+        </div>
+        <div style="height: 2px; background-color: #92CCF0"></div>
+        <p class="mt-4 mb-0 text-center fw-semibold">
+            Copyright ©
+            <a class="text-white" href="">DIPHASAC SAC.</a>
+            2024 – Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+
+<!-- Whatsapp button -->
+<a href="https://api.whatsapp.com/send?phone=51960589241&text=Quiero%20ponerme%20en%20contacto%20con%20Diphasac." target="_blank" class="whatsapp-float ">
+    <img src="images/whatsapp-icon.svg" alt="whatsapp" class="w-100">
+</a>
+
+
+</body>
+</html>
