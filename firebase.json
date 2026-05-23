@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "diphasac-web-52e08",
     "public": "diphasac-web-main/public",
     "ignore": ["**/.*", "**/node_modules/**"],
     "cleanUrls": true,
